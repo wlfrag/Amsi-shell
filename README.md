@@ -1,14 +1,18 @@
 # Amsi-shell
 Amsi_bypass with meterpreter shell. (Working on columnar transposition encoding).
 
+Also generates a base64 payload that works with powershell -enc
+
+
 ## Usage
 
 On kali:
 
 pwsh ./Invoke-Amsi-shell.ps1 [payload] [listen ip] [port] 
 
-![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/2d77d153-0e5c-4349-b663-7853f6d9df0d)
 
+
+![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/fb3da6d3-aa77-46ad-a052-e58a9f6731a9)
 
 
 
