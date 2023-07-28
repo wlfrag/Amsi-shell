@@ -10,10 +10,7 @@ On kali:
 
 pwsh ./Invoke-Amsi-shell.ps1 [payload] [listen ip] [port] 
 
-
-
-![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/fb3da6d3-aa77-46ad-a052-e58a9f6731a9)
-
+![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/45973df9-7b49-41fd-89b0-9b70597c1f6c)
 
 
 [Files]
