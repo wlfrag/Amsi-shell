@@ -8,9 +8,10 @@ Also generates a base64 payload that works with powershell -enc
 
 On kali:
 
-pwsh ./Invoke-Amsi-shell.ps1 [payload] [listen ip] [port] 
+pwsh ./Invoke-Amsi-shell.ps1 [payload] [listen ip] [port] [webserver_port]
 
-![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/45973df9-7b49-41fd-89b0-9b70597c1f6c)
+![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/1714e5d4-5218-40b2-b8e9-fad5a639b1dc)
+
 
 
 [Files]
