@@ -10,9 +10,7 @@ On kali:
 
 pwsh ./Invoke-Amsi-shell.ps1 [payload] [listen ip] [port] [webserver_port]
 
-![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/1714e5d4-5218-40b2-b8e9-fad5a639b1dc)
-
-
+![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/047ace71-6a80-400b-bd08-6e584509a0d1)
 
 [Files]
 
@@ -23,7 +21,8 @@ test.ps1 - contains the initial bypass
 
 [Victim]
 
-![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/72ad64f4-66ab-43c4-a021-63191338dc6a)
+![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/531c9c73-a4da-4f6f-b333-5c30bdb402e7)
+
 
 Downloads the initial AMSI_Bypass(test.ps1)
 
@@ -34,15 +33,12 @@ Downloads the payload "1.txt"
 
 [Kali]
 
-![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/64a8f8aa-1418-4f30-9c9e-0de1c43fe6c7)
-
-
+![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/9a07e9ed-03e8-42e5-8022-3394fc900db7)
 
 
 [Kali]
 
-![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/71631d3d-9a01-49a3-ac80-2473bd8f0b9b)
-
+![image](https://github.com/wlfrag/Amsi-shell/assets/43529877/c7bda651-3587-4dd5-8bbc-eddbd7c465bc)
 
 
 
