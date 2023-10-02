@@ -1,7 +1,8 @@
 # Amsi-shell
-Amsi_bypass with meterpreter shell. (Working on columnar transposition encoding).
+Amsi_bypass with meterpreter shell. (Bypassess AV and AMSI)
 
 Also generates a base64 payload that works with powershell -enc
+
 
 
 ## Usage
